@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
 
-  <body>
+  <body class="body">
     <header>
       <h1>
         <span>Modal:</span> a web page element that displays in front of and deactivates all other page content
@@ -37,7 +37,7 @@
 
     <div class="modal modal-one" id="modal modal-one">
       <div class="modal-content modal-content-one">
-        <span class="close close-one">&times;</span>
+        <span class="close-one">&times;</span>
         <h1>Benefits of Modals</h1>
         <hr />
         <br>
@@ -64,7 +64,7 @@
 
     <div class="modal modal-two" id="modal modal-two">
       <div class="modal-content modal-content-two">
-        <span class="close">&times;</span>
+        <span class="close-two">&times;</span>
         <h1>Pop Up vs Modal</h1>
         <hr />
         <p>
@@ -84,24 +84,25 @@
       </div>
     </section>
 
-    <div class="modal modal-three" id="modal modal-three">
+    <div class="modal modal-three" 
+    id="modal modal-three">
       <div class="modal-content modal-content-three">
-        <span class="close">&times;</span>
+        <span class="close-three">&times;</span>
         <h1>Modal Form: Pop Quiz!</h1>
         <hr />
         <br>
         <p>
           What are the three benefits of a modal? 
         </p>
-        <input type="text" class="form-text" placeholder="simplicity, visibility, and flexibility">
+        <input type="text" class="form-text" id="input-text1" placeholder="simplicity, visibility, and flexibility">
         <br><br>
         <p>
           What is the difference between a pop up and a modal?
         </p>
-        <input type="text" class="form-text" placeholder="">
+        <input type="text" class="form-text" id="input-text2" placeholder="Modals prevent users from interacting with site, and pop ups don't.">
         <div>
         <br>
-        <input type="submit" class="submit" >
+        <input type="submit" class="submit">
       </div>
       </div>
     </div>

@@ -40,7 +40,7 @@ header {
   color: #fff;
   padding-bottom: 3rem;
   width: 35%;
-  height: 30%;
+  height: 35%;
   overflow: auto;
 }
 
@@ -117,7 +117,25 @@ form button:hover {
   }
 }
 
-.close {
+.close-one {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  color: var(--color-primary);
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.close-two {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  color: var(--color-primary);
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.close-three {
   position: absolute;
   top: 5px;
   right: 10px;
@@ -149,7 +167,12 @@ img {
 }
 
 .form-text {
-  width: 80%;
+  width: 85%;
+  max-width: 60rem;
+  padding: 1rem;
   height: 3rem;
   font-size: 1.5rem;
+  overflow: auto;
+  position: relative;
+  text-align: left;
 }

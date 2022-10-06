@@ -2,18 +2,18 @@
 const modalOne = document.querySelector(".modal-one"),
   modalContentOne = document.querySelector(".modal-content-one"),
   btnOne = document.querySelector(".btn-one"),
-  closeOne = document.querySelector(".close");
+  closeOne = document.querySelector(".close-one");
 
 const modalTwo = document.querySelector(".modal-two"),
   modalContentTwo = document.querySelector(".modal-content-two"),
   btnTwo = document.querySelector(".btn-two"),
-  closeTwo = document.querySelector(".close");
+  closeTwo = document.querySelector(".close-two");
 
 const modalThree = document.querySelector(".modal-three"),
   modalContentThree = document.querySelector(".modal-content-three"),
   btnThree = document.querySelector(".btn-three"),
-  closeThree = document.querySelector(".close"),
-  submitBtn = document.querySelector(".submit");
+  submitBtn = document.querySelector(".submit"),
+  closeThree = document.querySelector(".close-three");
 
 
 
@@ -72,8 +72,9 @@ function openModalThree(e) {
 
 // CLOSE MODAL THREE
 function closeModalThree() {
-  Text.innerHTML = 'none'
   modalContentThree.classList.add("slide-up");
+  document.getElementById('input-text1').value = ''
+  document.getElementById('input-text2').value = ''
   
   setTimeout(() => {
     modalThree.style.display = "none";
